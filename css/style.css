@@ -45,3 +45,54 @@ section {
     border: 1px solid red;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+/****/
+
+/* List */
+ul {
+    list-style: none;
+}
+/****/
+
+/* Button */
+.btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: .5rem .8rem;
+    border: none;
+    cursor: pointer;
+}
+/****/
+
+/* Start Nav */
+nav {
+    padding: 1rem;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+nav img {
+    max-width: 200px;
+    padding-right: 1rem;
+}
+/* End Nav */
