@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0061ff;
     --secondary-color: #b4d0e7;
-    --default-space: 100px;
+    --default-space: 70px;
 }
 
 * {
@@ -11,11 +11,11 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: bold;
 }
 
@@ -27,6 +27,10 @@ h2 {
 h3 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+p {
+    padding-bottom: 1.5rem;
 }
 
 .container {
@@ -52,6 +56,18 @@ section {
 
 .flex-space-between {
     justify-content: space-between;
+}
+
+.flex-align-stretch {
+    align-items: stretch;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 /* Link */
@@ -96,3 +112,35 @@ nav img {
     padding-right: 1rem;
 }
 /* End Nav */
+
+/* Start Header */
+header {
+    background-color: var(--secondary-color);
+    padding-top: var(--default-space);
+}
+
+header .btn {
+    margin-bottom: 1.5rem;
+}
+
+header i {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.section-hero div:first-child {
+    margin-top: 4.5rem;
+    position: relative;
+    min-width: 300px;
+}
+
+.section-hero div:last-child {
+    transform: translate(0, 4.5rem);
+}
+
+.section-hero div:last-child img {
+    max-width: 50rem;
+}
+/* End Header */
