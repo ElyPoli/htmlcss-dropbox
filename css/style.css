@@ -1,5 +1,47 @@
+:root {
+    --primary-color: #0061ff;
+    --secondary-color: #b4d0e7;
+    --default-space: 100px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container-xl {
+    max-width: 1200px;
+}
+
+section {
+    width: 100%;
+    padding-top: var(--default-space);
+    padding-bottom: var(--default-space);
+    border: 1px solid red;
+}
+
