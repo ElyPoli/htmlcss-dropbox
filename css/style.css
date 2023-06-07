@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
 }
@@ -97,6 +97,12 @@ ul {
     padding: .5rem .8rem;
     border: none;
     cursor: pointer;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
 .check-radio {
@@ -252,4 +258,21 @@ header p {
     padding-right: 2rem;
 }
 
+/* Section partner */
+.card-partner img {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.card-partner > div {
+    flex-basis: 0;
+}
+
+.card-partner > div:last-child {
+    padding: 2rem 2rem 0 0;
+}
+
+.card-partner .btn-light {
+    margin-top: 2rem;
+}
 /* End Main */
