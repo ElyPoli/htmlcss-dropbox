@@ -4,6 +4,7 @@
     --third-color: #969697;
     --border-color: #ececed;
     --default-space: 70px;
+    --default-space-large: 90px;
 }
 
 * {
@@ -55,6 +56,11 @@ section {
     border: 1px solid red;
 }
 
+.section-padding-large {
+    padding-top: var(--default-space-large);
+    padding-bottom: var(--default-space-large);
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -91,6 +97,12 @@ section {
 /* List */
 ul {
     list-style: none;
+}
+/****/
+
+/* Link */
+a {
+    color: var(--primary-color);
 }
 /****/
 
@@ -291,5 +303,10 @@ header p {
 
 .card-operation h3, h4 {
     padding-bottom: 1.5rem;
+}
+
+/* Section team */
+.section-team h2 {
+    padding-right: 15rem;
 }
 /* End Main */
