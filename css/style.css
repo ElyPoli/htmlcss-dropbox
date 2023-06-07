@@ -61,6 +61,20 @@ section {
     padding-bottom: var(--default-space-large);
 }
 
+.line-small {
+    position: relative;
+}
+
+.line-small::after {
+    content: "";
+    background: var(--border-color);
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    height: 3px;
+    width: 50px;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -214,20 +228,6 @@ header p {
     padding: 2rem;
 }
 
-.card-business div:nth-child(3) {
-    position: relative;
-}
-
-.card-business div:nth-child(3)::after {
-    content: "";
-    background: var(--border-color);
-    position: absolute;
-    top: 0;
-    left: 2rem;
-    height: 3px;
-    width: 50px;
-}
-
 .card-business .btn {
     font-size: 1rem;
     margin: 3rem 0 2rem 0;
@@ -348,3 +348,38 @@ header p {
     text-align: right;
 }
 /* End Main */
+
+/* Start Footer */
+footer {
+    background-color: #000000;
+    padding: 2rem 0;
+}
+
+footer h4 {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .line-small::after {
+    left: 0;
+    height: 1px;
+}
+
+.footer-language p {
+    color: var(--third-color);
+    padding-top: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-language i:first-child {
+    padding-right: .5rem;
+}
+
+.footer-language i:last-child {
+    padding-left: .5rem;
+}
+/* End Footer */
