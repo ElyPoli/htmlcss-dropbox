@@ -84,6 +84,10 @@ section {
     gap: 2rem;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 /* List */
 ul {
     list-style: none;
@@ -274,5 +278,18 @@ header p {
 
 .card-partner .btn-light {
     margin-top: 2rem;
+}
+
+/* Section operation */
+.card-operation > div > div {
+    flex-basis: calc(100% / 3 - 2rem);
+}
+
+.card-operation img {
+    width: 100%;
+}
+
+.card-operation h3, h4 {
+    padding-bottom: 1.5rem;
 }
 /* End Main */
