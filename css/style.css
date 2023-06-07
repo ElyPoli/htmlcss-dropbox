@@ -81,7 +81,7 @@ section {
 }
 
 .flex-gap {
-    gap: 30px;
+    gap: 2rem;
 }
 
 /* List */
@@ -174,7 +174,12 @@ header p {
 /* Section business */
 .card-business {
     border: 2px solid var(--border-color);
-    min-width: calc(100% / 3 - 30px);
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.card-business-big {
+    margin-top: 3rem;
 }
 
 .card-business > div:first-child {
@@ -230,6 +235,21 @@ header p {
 
 .card-business .color-text {
     color: var(--third-color);
+}
+
+.card-business-big .btn {
+    margin-top: 0;
+    margin-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.card-business-big .padding-text {
+    padding-top: 2rem;
+}
+
+.card-business-section-center {
+    padding-right: 2rem;
 }
 
 /* End Main */
