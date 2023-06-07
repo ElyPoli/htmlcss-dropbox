@@ -1,6 +1,8 @@
 :root {
     --primary-color: #0061ff;
     --secondary-color: #b4d0e7;
+    --third-color: #969697;
+    --border-color: #ececed;
     --default-space: 70px;
 }
 
@@ -15,22 +17,26 @@ body {
 }
 
 h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    padding-bottom: 2rem;
 }
 
 h3 {
     font-size: 2rem;
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 
-p {
-    padding-bottom: 1.5rem;
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
 }
 
 .container {
@@ -62,6 +68,10 @@ section {
     align-items: stretch;
 }
 
+.flex-align-start {
+    align-items: flex-start;
+}
+
 .flex-grow-2 {
     flex-grow: 2;
 }
@@ -70,12 +80,9 @@ section {
     flex-grow: 1;
 }
 
-/* Link */
-a {
-    text-decoration: none;
-    color: #000000;
+.flex-gap {
+    gap: 30px;
 }
-/****/
 
 /* List */
 ul {
@@ -91,11 +98,19 @@ ul {
     border: none;
     cursor: pointer;
 }
+
+.check-radio {
+    padding-bottom: 2rem;
+}
+
+.check-radio label {
+    padding-right: 2rem;
+}
 /****/
 
 /* Start Nav */
 nav {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 nav ul {
@@ -111,12 +126,18 @@ nav img {
     max-width: 200px;
     padding-right: 1rem;
 }
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
 /* End Nav */
 
 /* Start Header */
 header {
     background-color: var(--secondary-color);
     padding-top: var(--default-space);
+    margin-bottom: 4.5rem;
 }
 
 header .btn {
@@ -128,6 +149,10 @@ header i {
     position: absolute;
     bottom: 10px;
     left: 0;
+}
+
+header p {
+    padding-bottom: 1.5rem;
 }
 
 .section-hero div:first-child {
@@ -144,3 +169,67 @@ header i {
     max-width: 50rem;
 }
 /* End Header */
+
+/* Start Main */
+/* Section business */
+.card-business {
+    border: 2px solid var(--border-color);
+    min-width: calc(100% / 3 - 30px);
+}
+
+.card-business > div:first-child {
+    text-align: center;
+    padding: .5rem 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.card-business > div:nth-child(2), .card-business > div:nth-child(3) {
+    padding: 2rem;
+}
+
+.card-business div:nth-child(3) {
+    position: relative;
+}
+
+.card-business div:nth-child(3)::after {
+    content: "";
+    background: var(--border-color);
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    height: 3px;
+    width: 50px;
+}
+
+.card-business .btn {
+    font-size: 1rem;
+    margin: 3rem 0 2rem 0;
+    padding: .8rem 1rem;
+    width: 100%;
+}
+
+.card-business > div:nth-child(2) > ul {
+    padding-top: 2rem;
+}
+
+.card-business > div:nth-child(3) > ul {
+    padding-top: .2rem;
+}
+
+.card-business > div:nth-child(3) i {
+    color: var(--primary-color);
+}
+
+.card-business li {
+    padding: .5rem 0;
+}
+
+.card-business li i {
+    padding-right: .5rem;
+}
+
+.card-business .color-text {
+    color: var(--third-color);
+}
+
+/* End Main */
