@@ -309,4 +309,28 @@ header p {
 .section-team h2 {
     padding-right: 15rem;
 }
+
+/* Section cta */
+.section-cta {
+    background-color: var(--secondary-color);
+}
+
+.section-cta .btn {
+    border: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.section-cta h2 {
+    color: #61082b;
+}
+
+.section-cta div {
+    flex-basis: 0;
+}
+
+.section-cta > section > div:last-child {
+    text-align: right;
+}
+
 /* End Main */
