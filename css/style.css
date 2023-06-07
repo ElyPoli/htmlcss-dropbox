@@ -53,7 +53,6 @@ section {
     width: 100%;
     padding-top: var(--default-space);
     padding-bottom: var(--default-space);
-    border: 1px solid red;
 }
 
 .section-padding-large {
@@ -147,6 +146,11 @@ a {
 /* Start Nav */
 nav {
     padding: 1.5rem;
+    position: fixed;
+    z-index: 5;
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav ul {
@@ -172,7 +176,7 @@ nav a {
 /* Start Header */
 header {
     background-color: var(--secondary-color);
-    padding-top: var(--default-space);
+    padding-top: calc(var(--default-space) * 2);
     margin-bottom: 4.5rem;
 }
 
@@ -347,6 +351,81 @@ header p {
 .section-faq i {
     text-align: right;
 }
+
+/* Section logo */
+.section-logo > div {
+    width: 100%;
+}
+
+.section-logo-partner > div {
+    flex-basis: calc(100% / 2);
+    position: relative;
+    aspect-ratio: 1/1;
+}
+
+.section-logo-partner > div > img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-logo-left > div:nth-child(1) {
+    background-color: #a2d39b;
+    border: 15px solid #d1e9cd;
+}
+
+.section-logo-left > div:nth-child(2) {
+    background-color: #61082b;
+}
+
+.section-logo-left > div:nth-child(3) {
+    background-color: #0093ce;
+}
+
+.section-logo-left > div:nth-child(4) {
+    background-color: #ff1c1c;
+}
+
+.section-logo-right > div:nth-child(1) {
+    background-color: #d5001f;
+}
+
+.section-logo-right > div:nth-child(2) {
+    background-color: #b4d0e7;
+}
+
+.section-logo-right > div:nth-child(3) {
+    background-color: #0d2481;
+}
+
+.section-logo-right > div:nth-child(4) {
+    background-color: #ffd830;
+}
+
+.section-logo-center .line-small::after {
+    left: 0;
+    width: 130px;
+    background-color: var(--third-color);
+}
+
+.section-logo-center {
+    padding: 2rem;
+    width: calc(100% / 3);
+    overflow: auto;
+    background-color: var(--border-color);
+}
+
+.section-logo-center img {
+    width: 50%;
+    padding-bottom: 2rem;
+}
+
+.section-logo-center p {
+    padding-top: 2rem;
+}
+
 /* End Main */
 
 /* Start Footer */
