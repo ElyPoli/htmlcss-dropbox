@@ -333,4 +333,18 @@ header p {
     text-align: right;
 }
 
+/* Section faq */
+.section-faq div {
+    border-top: 1px solid var(--third-color);
+    border-bottom: 1px solid var(--third-color);
+    border-collapse: collapse;
+}
+
+.section-faq p {
+    padding: 2rem;
+}
+
+.section-faq i {
+    text-align: right;
+}
 /* End Main */
