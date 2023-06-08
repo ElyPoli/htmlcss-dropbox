@@ -338,17 +338,39 @@ header p {
 }
 
 /* Section faq */
-.section-faq div {
+.section-faq > div:first-of-type {
     border-top: 1px solid var(--third-color);
     border-bottom: 1px solid var(--third-color);
-    border-collapse: collapse;
 }
 
-.section-faq p {
+.section-faq > div:last-of-type {
+    border-top: 1px solid var(--third-color);
+    border-bottom: 1px solid var(--third-color);
+}
+
+.section-faq-tab {
+    cursor: pointer;
+}
+
+.section-faq-tab .section-faq-answer {
+    display: none;
+}
+
+.section-faq-tab:hover .section-faq-answer {
+    display: block;
+}
+
+.section-faq-tab p {
     padding: 2rem;
+    font-weight: bold;
 }
 
-.section-faq i {
+.section-faq-answer p {
+    padding: 1rem 2rem 2rem 2rem;
+    font-weight: normal;
+}
+
+.section-faq-tab i {
     text-align: right;
 }
 
@@ -430,6 +452,10 @@ header p {
     width: calc(100% / 3);
     background-color: var(--border-color);
     padding: 2rem;
+}
+
+.tabs {
+    cursor: pointer;
 }
 
 .tabs:hover .pannel-section-logo {
