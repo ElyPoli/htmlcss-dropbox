@@ -352,23 +352,25 @@ header p {
     text-align: right;
 }
 
-/* Section logo */
+/* Section logo partner */
+.section-logo-relative {
+    position: relative;
+}
+
 .section-logo > div {
     width: 100%;
 }
 
 .section-logo-partner > div {
     flex-basis: calc(100% / 2);
-    position: relative;
     aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-logo-partner > div > img {
     width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .section-logo-left > div:nth-child(1) {
@@ -404,28 +406,41 @@ header p {
     background-color: #ffd830;
 }
 
-.section-logo-center .line-small::after {
-    left: 0;
-    width: 130px;
-    background-color: var(--third-color);
-}
-
 .section-logo-center {
-    padding: 2rem;
     width: calc(100% / 3);
-    overflow: auto;
     background-color: var(--border-color);
 }
 
-.section-logo-center img {
+.pannel-section-logo img {
     width: 50%;
     padding-bottom: 2rem;
 }
 
-.section-logo-center p {
+.pannel-section-logo p {
     padding-top: 2rem;
 }
 
+.pannel-section-logo {
+    display:none;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: calc(100% / 3);
+    height: 100%;
+    width: calc(100% / 3);
+    background-color: var(--border-color);
+    padding: 2rem;
+}
+
+.tabs:hover .pannel-section-logo {
+    display:block;
+}
+
+.pannel-section-logo .line-small::after {
+    left: 0;
+    width: 130px;
+    background-color: var(--third-color);
+}
 /* End Main */
 
 /* Start Footer */
