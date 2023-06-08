@@ -3,6 +3,7 @@
     --secondary-color: #b4d0e7;
     --third-color: #969697;
     --border-color: #ececed;
+    --btn-hover-color: #4089ff;
     --default-space: 70px;
     --default-space-large: 90px;
 }
@@ -117,6 +118,10 @@ ul {
 a {
     color: var(--primary-color);
 }
+
+a:hover {
+    text-decoration: underline;
+}
 /****/
 
 /* Button */
@@ -126,12 +131,21 @@ a {
     padding: .5rem .8rem;
     border: none;
     cursor: pointer;
+    transition: background-color .5s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color);
 }
 
 .btn-light {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #000000;
+}
+
+.btn-light:hover {
+    background-color: var(--border-color);
 }
 
 .check-radio {
@@ -360,6 +374,10 @@ header p {
     display: block;
 }
 
+.section-faq-tab:hover i {
+    transform: scaleY(-1);
+}
+
 .section-faq-tab p {
     padding: 2rem;
     font-weight: bold;
@@ -454,11 +472,15 @@ header p {
     padding: 2rem;
 }
 
-.tabs {
+.tabs-section-logo:hover > img {
+    width: 80% !important;
+}
+
+.tabs-section-logo {
     cursor: pointer;
 }
 
-.tabs:hover .pannel-section-logo {
+.tabs-section-logo:hover .pannel-section-logo {
     display:block;
 }
 
@@ -467,6 +489,23 @@ header p {
     width: 130px;
     background-color: var(--third-color);
 }
+
+#pannel-section-default > div {
+    display: block;
+}
+
+#pannel-section-default > img {
+    width: 80%;
+}
+
+.section-logo-left:hover #pannel-section-default > img {
+    width: 50%;
+}
+
+.section-logo:hover > .section-logo-left > #pannel-section-default > img {
+    width: 50%;
+}
+
 /* End Main */
 
 /* Start Footer */
@@ -501,5 +540,9 @@ footer .line-small::after {
 
 .footer-language i:last-child {
     padding-left: .5rem;
+}
+
+.footer-language i {
+    cursor: pointer;
 }
 /* End Footer */
